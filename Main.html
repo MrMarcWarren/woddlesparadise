@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Home | ISLA UNO</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="script.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="master.css">
+
+    </head>
+
+    <body>
+
+
+        <header>
+            <a href="Main.html" class="logo">Woddles' paradise</a>
+
+        <nav>
+            <ul>
+                <li><a href="Main.html" class="active">Home</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+
+        </header>
+
+        <main id="main" class="main">
+
+        <section class="top-part">
+
+            <img src="Images/clouds.png" id="clouds">
+            <img src="Images/sun.png" id="sun">
+
+            <img src="Images/waterup.png" id="waterup">
+            <img src="Images/waterdown.png" id="waterdown">
+
+            <h2 id="text">ISLA UNO</h2>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="Images/MoutainFront.png" id="MoutainFront">
+
+        </section>
+
+        <div class="sec" id="sec">
+
+            <h2>WELCOME TO THE ISLAND!</h2>
+
+            <p> Hi! My Name is <a href="Main.html"><b>Warren</b></a>, and I'm the proud Owner of this Island, I've created this website to serve as my Personal Blog site and to help me track my Projects. You can freely explore this website for as long as you want,
+                but always remember to wear sunscreen! If you are interested in what I do, you can check out the different pages in the website. You can check out my projects on the <a href="#"><b>Projects</b></a> Tab, or buy
+                my Merchendise and Assets in the <a href="#"><b>Shop</b></a> Tab. If you are personally interested and want to learn more about me, just check the <a href="#"><b>About Me</b></a> Page. Be sure to
+                also check out the Map below!
+            </p>
+
+            <br><br>
+
+            <h3>ISLAND MAP</h3>
+
+            <br>
+
+            <ul>
+                <li><a href="Main.html" class="active" id="island1">Isla Uno</a></li>
+                <li><a href="aboutme.html" id="island2">Isla Mysterio</a></li>
+                <li><a href="#" id="island3">Isla Cabeza</a></li>
+                <li><a href="#" id="island4">Isla Dinero</a></li>
+            </ul>
+
+            <img src="Images/Map.png" id="map">
+
+            <p> Here's a Map to Help you out on your Journey here in the Island. Always Check the map so you won't get lost. Always remember that the Map is our friend and will help us
+                out everytime we are lost and couldn't find our way.
+            </p>
+
+        </div>
+
+        <script>
+            let sun = document.getElementById("sun");
+
+            let text = document.getElementById("text");
+            let btn = document.getElementById("btn");
+            
+            let MoutainFront = document.getElementById("MoutainFront");
+
+            let header = document.querySelector("header")
+
+            window.addEventListener('scroll', function(){
+
+                let value = window.scrollY;
+
+                sun.style.top = value * -0.25 + 'px';
+
+                MoutainFront.style.top = value * 0 + 'px';
+
+                text.style.marginTop = value * 0.10 + 'px';
+
+                header.style.top = value * 0 + 'px';
+
+            })
+        </script>
+
+        <section class="footer">
+
+            <div class="footerdiv">
+
+                <ul class="footerlist">
+
+                <li>
+                    <a href="Main.html"> Home </a>
+                </li>
+                <li>
+                    <a href="aboutme.html"> About </a>
+                </li>
+                <li>
+                    <a href="#"> Projects </a>
+                </li>
+                <li>
+                    <a href="#"> Shop </a>
+                </li>
+                <li>
+                    <a href="#"> Terms and policies </a>
+                </li>
+            </ul>
+        </div>
+
+        <p>
+            Made by Marc Warren VO | Woddles' Paradise 2022
+        </p>
+
+        </section>
+
+    </main>
+
+    </body>
+
+
+
+
+
+
+</html>
